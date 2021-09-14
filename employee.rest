@@ -1,0 +1,37 @@
+### GET
+GET http://localhost:8080/employees
+
+### GET with invalid ID
+GET http://localhost:8080/employees/1
+
+
+### POST new User
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "gender": "MALE",
+    "startDate": "2020-09-01",
+    "position": "Full Stack SW Enginner",
+    "monthlySalary": 6000.00,w
+    "area": "Business and Projects"
+}
+
+### PUT update user
+PUT http://localhost:8080/employees/1
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "gender": "MALE",
+  "startDate": "2020-09-01",
+  "position": "Full Stack SW Enginner",
+  "monthlySalary": 6000.00,
+  "area": "Business and Projects"
+}
+
+### DELETE
+DELETE http://localhost:8080/employees/1
